@@ -1,0 +1,33 @@
+================================================================================
+Plot 1 - MEMORY  (memory indexes checked against the authors' values)
+================================================================================
+
+Group                n_naive  n_trained   mean MI    stat    norm   total
+7d Control                70         72     0.317   0.040   0.022   0.045
+7d Downregulation         71         72     0.198   0.033   0.021   0.039
+7d Upregulation           72         71     0.221   0.041   0.021   0.046
+14d Control              125        125     0.184   0.032   0.025   0.041
+14d Downregulation        63         59     0.253   0.049   0.036   0.061
+14d Upregulation          63         63     0.140   0.048   0.039   0.062
+21d Control               70         70     0.232   0.041   0.012   0.043
+21d Downregulation        65         69     0.069   0.030   0.027   0.040
+21d Upregulation          65         68     0.011   0.035   0.031   0.047
+
+Kruskal-Wallis test per age + Dunn's test vs control (Bonferroni, 2 comparisons) + Cliff's delta
+  7 days: Kruskal-Wallis H = 4.79, p = 0.091  ns
+     Downregulation  vs Control: Dunn z =  1.97, adjusted p = 0.098 ns   | Cliff's delta = -0.20
+     Upregulation    vs Control: Dunn z =  1.81, adjusted p = 0.140 ns   | Cliff's delta = -0.17
+  14 days: Kruskal-Wallis H = 2.95, p = 0.229  ns
+     Downregulation  vs Control: Dunn z = -1.11, adjusted p = 0.530 ns   | Cliff's delta = +0.10
+     Upregulation    vs Control: Dunn z =  0.87, adjusted p = 0.771 ns   | Cliff's delta = -0.08
+  21 days: Kruskal-Wallis H = 21.33, p = 2.3e-5  ****
+     Downregulation  vs Control: Dunn z =  2.75, adjusted p = 0.012 *    | Cliff's delta = -0.29
+     Upregulation    vs Control: Dunn z =  4.58, adjusted p = 9.1e-6 **** | Cliff's delta = -0.43
+
+Memory as % of the control flies of the same age (bootstrap 95% range)
+  7d Downregulation       62%   [36% to 100%]
+  7d Upregulation         70%   [39% to 112%]
+  14d Downregulation     138%   [63% to 278%]
+  14d Upregulation        76%   [9% to 178%]
+  21d Downregulation      30%   [-5% to 72%]
+  21d Upregulation         5%   [-38% to 47%]
